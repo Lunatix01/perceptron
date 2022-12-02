@@ -44,7 +44,7 @@ for t in range(0, 30):
     # generate a random value in either class A or B
     if (count % 2 == 0):
         x1 = np.random.randint(0.1, 20)
-        y1 = np.random.randint(-10.1, 0.1)
+        y1 = np.random.randint(-40.1, 0.1)
         red = np.array([x1, y1, 'red'], dtype=object)
         data = np.vstack((data, red))
         plt.plot([x1], [y1], 'ro')
@@ -52,7 +52,7 @@ for t in range(0, 30):
         count = count+1
     else:
         x2 = np.random.randint(-20, 0.1)
-        y2 = np.random.randint(0.1, 10.1)
+        y2 = np.random.randint(0.1, 40.1)
         blue = np.array([int(x2), int(y2), 'blue'], dtype=object)
         data = np.vstack((data, blue))
         plt.plot([x2], [y2], 'bo')
