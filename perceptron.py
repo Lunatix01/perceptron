@@ -34,15 +34,15 @@ data = np.zeros(shape=(1, 3), dtype=object)
 # ln, = plt.plot(line, line2, 'k-')
 perpendecular = [w0[1], w0[0]*-1]
 slope = perpendecular[1]/perpendecular[0]
-x = np.linspace(-5, 5, 100)
+x = np.linspace(-20.1, 20.1, 100)
 b = 0
 y = slope*x+b
 ln, = plt.plot(x, y, 'k-')
 
-for t in range(0, 10):
+for t in range(0, 100):
     if (count % 2 == 0):
-        x1 = np.random.randint(1.1, 5.1)
-        y1 = np.random.randint(0.1, 5.1)
+        x1 = np.random.randint(0.1, 20)
+        y1 = np.random.randint(-10.1, 0.1)
         # x1 = np.random.uniform(0.1, 10.1)
         # y1 = np.random.uniform(5.1, 10.1)
 
@@ -54,8 +54,8 @@ for t in range(0, 10):
     else:
         # x2 = np.random.uniform(0.1, 10.1)
         # y2 = np.random.uniform(0.1, 5.1)
-        x2 = np.random.randint(-5.1, 0.1)
-        y2 = np.random.randint(0.1, 5.1)
+        x2 = np.random.randint(-20, 0.1)
+        y2 = np.random.randint(0.1, 10.1)
         blue = np.array([int(x2), int(y2), 'blue'], dtype=object)
         data = np.vstack((data, blue))
         plt.plot([x2], [y2], 'bo')
@@ -79,7 +79,8 @@ for t in range(0, 10):
         # ln, = plt.plot([w0[1], (w0[0]*-1)], [w0[0], w0[1]], 'k-')
         perpendecular = [w0[1], w0[0]*-1]
         slope = perpendecular[1]/perpendecular[0]
-        x = np.linspace(-5, 5, 100)
+        x = np.linspace(-20.1, 20.1, 100)
+
         b = 0
         y = slope*x+b
         # weightToPlot = np.array([w0[1], w0[0]]*-1)
@@ -101,7 +102,7 @@ for t in range(0, 10):
         # ln, = plt.plot(line, line2, 'k-')
         perpendecular = [w0[1], w0[0]*-1]
         slope = perpendecular[1]/perpendecular[0]
-        x = np.linspace(-5, 5, 100)
+        x = np.linspace(-20.1, 20.1, 100)
         b = 0
         y = slope*x+b
         # weightToPlot = np.array([w0[1], w0[0]]*-1)
